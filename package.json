@@ -79,7 +79,8 @@
   },
   "msw": {
     "workerDirectory": [
-      "demo-public"
+      "demo-public",
+      "public"
     ]
   },
   "pnpm": {
