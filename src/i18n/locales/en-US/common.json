@@ -1,0 +1,935 @@
+{
+  "app": {
+    "name": "Colony",
+    "tagline": "Ant Design admin, without the lock-in"
+  },
+  "action": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "delete": "Delete",
+    "edit": "Edit",
+    "create": "Create",
+    "search": "Search",
+    "reset": "Reset",
+    "export": "Export",
+    "refresh": "Refresh",
+    "close": "Close",
+    "back": "Back",
+    "next": "Next",
+    "submit": "Submit",
+    "view": "View",
+    "update": "Update"
+  },
+  "state": {
+    "loading": "Loading",
+    "empty": "Nothing here yet",
+    "error": "Something went wrong",
+    "retry": "Try again",
+    "saved": "Saved",
+    "deleted": "Deleted"
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "analysis": "Analysis",
+    "monitor": "Monitor",
+    "workplace": "Workplace",
+    "table": "Table",
+    "forms": "Forms",
+    "lists": "Lists",
+    "profile": "Profile",
+    "account": "Account",
+    "settings": "Settings",
+    "components": "Components",
+    "elements": "Elements",
+    "cards": "Cards",
+    "feedback": "Feedback",
+    "basicForm": "Basic form",
+    "cardList": "Card list",
+    "exceptions": "Exceptions",
+    "auth": "Authentication",
+    "stepForm": "Step form",
+    "searchList": "Search list",
+    "profileBasic": "Order detail",
+    "advancedForm": "Advanced form",
+    "basicList": "Basic list",
+    "profileAdvanced": "Account detail",
+    "accountCenter": "Account centre",
+    "assistant": "AI assistant",
+    "themeStudio": "Theme Studio",
+    "forbidden": "403 Forbidden",
+    "serverError": "500 Server error",
+    "notFound": "404 Not found",
+    "access": "Access control",
+    "workspace": "Workspace",
+    "kanban": "Kanban",
+    "calendar": "Calendar",
+    "inbox": "Inbox",
+    "files": "Files",
+    "notifications": "Notifications",
+    "audit": "Audit log",
+    "billing": "Billing",
+    "onboarding": "Getting started"
+  },
+  "theme": {
+    "label": "Theme",
+    "mode": {
+      "light": "Light",
+      "dark": "Dark",
+      "system": "System"
+    },
+    "density": {
+      "label": "Density",
+      "comfortable": "Comfortable",
+      "compact": "Compact",
+      "condensed": "Condensed"
+    },
+    "preset": {
+      "label": "Color",
+      "azure": "Azure",
+      "slate": "Slate",
+      "jade": "Jade",
+      "violet": "Violet",
+      "cinnabar": "Cinnabar",
+      "contrast": "High contrast"
+    }
+  },
+  "locale": {
+    "label": "Language",
+    "en-US": "English",
+    "zh-CN": "简体中文"
+  },
+  "a11y": {
+    "skipToContent": "Skip to main content",
+    "toggleSidebar": "Toggle sidebar",
+    "openCommandPalette": "Open command palette"
+  },
+  "page": {
+    "analysisDesc": "Revenue, traffic and product performance across the selected period.",
+    "monitorDesc": "Live service health and request throughput.",
+    "workplaceGreeting": "Good afternoon, Aigars",
+    "workplaceDesc": "Four projects in flight, one due this week.",
+    "elementsDesc": "Every control the template ships, in the states you will actually meet them.",
+    "cardsDesc": "Card compositions for dashboards, listings, profiles and pricing.",
+    "feedbackDesc": "Alerts, overlays, loading and empty states.",
+    "basicFormDesc": "Schema-first validation with React Hook Form and Zod.",
+    "cardListDesc": "A filterable, sortable collection with grid and list views.",
+    "ordersDesc": "240 orders, paged and filtered on the server.",
+    "stepFormDesc": "A three-step transfer, validated one step at a time.",
+    "searchListDesc": "Search, tab and sort across a mixed content set.",
+    "profileBasicDesc": "A single record with its line items and history.",
+    "settingsDesc": "Profile, appearance, notifications and security.",
+    "advancedFormDesc": "A multi-section order with editable line items and a running total.",
+    "basicListDesc": "A filterable list with counts and per-row actions.",
+    "profileAdvancedDesc": "A customer account with orders, activity and contacts.",
+    "accountCenterDesc": "Your profile, published work and recent activity.",
+    "assistantDesc": "A streaming chat surface with a pluggable provider.",
+    "themeStudioDesc": "Edit Ant Design tokens live and export a theme file.",
+    "accessDesc": "Roles, permissions, and what each one can actually reach.",
+    "kanbanDesc": "Drag cards between columns. Keyboard dragging works too.",
+    "calendarDesc": "Month and agenda views over a shared schedule.",
+    "inboxDesc": "A two-pane message list with reading and reply.",
+    "filesDesc": "Browse, upload and search stored files.",
+    "notificationsDesc": "Everything that happened, and what you want to hear about.",
+    "auditDesc": "Who changed what, when, and from where.",
+    "billingDesc": "Plan, usage, payment method and invoices.",
+    "onboardingDesc": "Six steps to a workspace that is actually set up."
+  },
+  "range": {
+    "7d": "7 days",
+    "30d": "30 days",
+    "12m": "12 months"
+  },
+  "stat": {
+    "revenue": "Revenue",
+    "visits": "Visits",
+    "orders": "Orders",
+    "conversion": "Conversion",
+    "vsPrevious": "vs. previous period"
+  },
+  "chart": {
+    "revenueTrend": "Revenue trend",
+    "trafficByDevice": "Traffic by device",
+    "salesByChannel": "Sales by channel",
+    "topProducts": "Top products",
+    "requestsPerSecond": "Requests per second"
+  },
+  "device": {
+    "desktop": "Desktop",
+    "mobile": "Mobile",
+    "tablet": "Tablet"
+  },
+  "channel": {
+    "direct": "Direct",
+    "organic": "Organic",
+    "referral": "Referral",
+    "social": "Social",
+    "email": "Email"
+  },
+  "table": {
+    "product": "Product",
+    "category": "Category",
+    "price": "Price",
+    "sold": "Sold",
+    "status": "Status",
+    "searchPlaceholder": "Search reference or customer",
+    "reference": "Reference",
+    "customer": "Customer",
+    "channel": "Channel",
+    "items": "Items",
+    "amount": "Amount",
+    "created": "Created",
+    "actions": "Actions",
+    "columns": "Columns",
+    "resetColumns": "Reset columns",
+    "fullscreen": "Fullscreen",
+    "selectedCount": "{{count}} selected",
+    "clearSelection": "Clear",
+    "paginationTotal": "{{from}}–{{to}} of {{total}}",
+    "bulkExported": "Exported {{count}} orders",
+    "bulkDeleted": "Deleted {{count}} orders"
+  },
+  "category": {
+    "hardware": "Hardware",
+    "software": "Software",
+    "services": "Services"
+  },
+  "status": {
+    "active": "Active",
+    "low": "Low stock",
+    "draft": "Draft"
+  },
+  "product": {
+    "aurora": "Aurora Sensor Kit",
+    "meridian": "Meridian Analytics",
+    "lattice": "Lattice Edge Node",
+    "quanta": "Quanta Support Plan",
+    "vertex": "Vertex Sync",
+    "cobalt": "Cobalt Gateway"
+  },
+  "monitor": {
+    "services": "Services",
+    "uptime": "Uptime",
+    "activity": "Recent activity",
+    "cpu": "CPU",
+    "memory": "Memory",
+    "disk": "Disk"
+  },
+  "service": {
+    "api": "API gateway",
+    "web": "Web frontend",
+    "worker": "Job worker",
+    "database": "Database"
+  },
+  "serviceStatus": {
+    "healthy": "Healthy",
+    "degraded": "Degraded",
+    "down": "Down"
+  },
+  "person": {
+    "wei": "Wei Zhang",
+    "marta": "Marta Kovac",
+    "jonas": "Jonas Berg",
+    "li": "Li Chen",
+    "ana": "Ana Duarte"
+  },
+  "activity": {
+    "deployed": "deployed",
+    "merged": "merged",
+    "flagged": "flagged",
+    "commented": "commented on"
+  },
+  "workplace": {
+    "projects": "Active projects",
+    "quickLinks": "Quick links",
+    "team": "Team",
+    "recentActivity": "Recent activity",
+    "dueIn": "Due in {{days}}d"
+  },
+  "quickLink": {
+    "deploy": "Deploy",
+    "issues": "Issues",
+    "docs": "Docs",
+    "team": "Team"
+  },
+  "project": {
+    "datatable": "DataTable",
+    "themeStudio": "Theme Studio",
+    "docsSite": "Docs site",
+    "rbac": "Visual RBAC"
+  },
+  "elements": {
+    "buttons": "Buttons",
+    "buttonsDesc": "Variants, icons and loading states. Every button says what happens when you press it.",
+    "sizes": "Sizes and inputs",
+    "sizesDesc": "Three sizes across buttons and inputs, so dense screens stay aligned.",
+    "tags": "Tags and badges",
+    "tagsDesc": "Status is carried by the label as well as the colour, so it survives a colour-blind reading.",
+    "avatars": "Avatars and rating",
+    "avatarsDesc": "Identity and simple scoring.",
+    "controls": "Toggles and selection",
+    "controlsDesc": "Switches, checkboxes, radios and segmented controls.",
+    "progress": "Progress",
+    "progressDesc": "Linear, circular and dashboard variants plus range sliders.",
+    "timelineTree": "Timeline, tree and upload",
+    "timelineTreeDesc": "Structural components for history, hierarchy and files.",
+    "disabled": "Disabled",
+    "moreActions": "More actions",
+    "large": "Large",
+    "medium": "Medium",
+    "small": "Small",
+    "optAll": "All",
+    "default": "Default",
+    "inProgress": "In progress",
+    "closable": "Closable",
+    "upload": "Upload file",
+    "tooltipHint": "Tooltips describe, they never hide the thing you clicked.",
+    "hoverMe": "Hover me"
+  },
+  "timeline": {
+    "created": "Project created",
+    "reviewed": "Design reviewed",
+    "blocked": "Blocked on API",
+    "shipped": "Shipped to production"
+  },
+  "cards": {
+    "kpi": "KPI tiles",
+    "structure": "Card structure",
+    "patterns": "Content patterns",
+    "pricing": "Pricing",
+    "storage": "Storage",
+    "storageUsed": "{{used}} GB of {{total}} GB used",
+    "withActions": "With actions",
+    "withActionsDesc": "Footer actions for the operations you repeat most.",
+    "withTabs": "With tabs",
+    "withTabsDesc": "Switch views without leaving the card.",
+    "withRibbon": "With ribbon",
+    "withRibbonDesc": "Flags something new or promoted.",
+    "new": "New",
+    "loading": "Loading",
+    "hoverable": "Hoverable",
+    "hoverableDesc": "Lifts on hover to signal the whole card is a target.",
+    "inner": "Nested",
+    "innerTitle": "Inner card",
+    "innerDesc": "For grouping inside a card.",
+    "profileRole": "Staff engineer · Platform",
+    "statProjects": "Projects",
+    "statReviews": "Reviews",
+    "statTeams": "Teams",
+    "follow": "Follow",
+    "chartCard": "Revenue",
+    "popular": "Most popular",
+    "perMonth": "/month",
+    "getStarted": "Get started",
+    "choosePlan": "Choose plan",
+    "tabOverview": "Overview",
+    "tabActivity": "Activity"
+  },
+  "plan": {
+    "starter": "Starter",
+    "team": "Team",
+    "scale": "Scale"
+  },
+  "planFeature": {
+    "projects3": "Up to 3 projects",
+    "communitySupport": "Community support",
+    "storage1": "1 GB storage",
+    "projectsUnlimited": "Unlimited projects",
+    "prioritySupport": "Priority support",
+    "storage50": "50 GB storage",
+    "roles": "Roles and permissions",
+    "everythingInTeam": "Everything in Team",
+    "sso": "SSO and SCIM",
+    "auditLog": "Audit log",
+    "storage500": "500 GB storage",
+    "sla": "99.9% uptime SLA"
+  },
+  "feedback": {
+    "alerts": "Alerts",
+    "alertsDesc": "Persistent messages that stay until the condition clears.",
+    "transient": "Overlays and transient messages",
+    "transientDesc": "Messages, notifications, modals, drawers and confirmations.",
+    "progressSteps": "Steps",
+    "progressStepsDesc": "Multi-stage progress, including the error state.",
+    "loadingStates": "Loading",
+    "emptyStates": "Empty",
+    "results": "Results",
+    "infoMsg": "A new version of the template is available.",
+    "successMsg": "Your changes have been published.",
+    "warningMsg": "Two services are running in degraded mode.",
+    "warningDesc": "Job worker latency is above the 300 ms threshold.",
+    "errorMsg": "Could not reach the billing service.",
+    "errorDesc": "The request timed out after 30 seconds.",
+    "showMessage": "Show message",
+    "showNotification": "Show notification",
+    "showModal": "Open modal",
+    "showDrawer": "Open drawer",
+    "showConfirm": "Confirm delete",
+    "showPopconfirm": "Popconfirm",
+    "notifTitle": "Deployment finished",
+    "notifDesc": "api-gateway v2.4.1 is live in production.",
+    "confirmTitle": "Delete this project?",
+    "confirmDesc": "This cannot be undone.",
+    "modalTitle": "Edit project",
+    "modalBody": "Modal content sits here, in the theme you selected.",
+    "drawerTitle": "Project settings",
+    "drawerBody": "Drawers suit longer forms than a modal comfortably holds.",
+    "resultSuccess": "Project created",
+    "resultSuccessDesc": "Your team can start work right away.",
+    "resultWarning": "Some settings need attention",
+    "resultWarningDesc": "Billing details are incomplete."
+  },
+  "steps": {
+    "details": "Details",
+    "detailsDesc": "Name and owner",
+    "review": "Review",
+    "reviewDesc": "Check the summary",
+    "done": "Done",
+    "doneDesc": "Project created"
+  },
+  "form": {
+    "details": "Details",
+    "settings": "Settings",
+    "name": "Project name",
+    "namePlaceholder": "e.g. Migration to antd v6",
+    "email": "Contact email",
+    "role": "Role",
+    "rolePlaceholder": "Select a role",
+    "team": "Teams",
+    "teamPlaceholder": "Select one or more",
+    "startsAt": "Start date",
+    "seats": "Seats",
+    "notes": "Notes",
+    "notesPlaceholder": "Anything the team should know before starting.",
+    "visibility": "Visibility",
+    "private": "Private",
+    "public": "Public",
+    "budget": "Budget",
+    "notify": "Email me on changes",
+    "dropFiles": "Drop a file here or click to browse",
+    "password": "Password",
+    "payFrom": "Pay from",
+    "payTo": "Pay to",
+    "amount": "Amount",
+    "method": "Method",
+    "reviewNotice": "Check the details below. Transfers cannot be reversed once submitted.",
+    "transferDone": "Transfer submitted",
+    "transferDoneDesc": "${{amount}} is on its way to {{to}}.",
+    "newTransfer": "Make another transfer",
+    "orderTitle": "Order title",
+    "orderTitlePlaceholder": "e.g. Q3 hardware refresh",
+    "owner": "Owner",
+    "region": "Region",
+    "deliverBy": "Deliver by",
+    "unitPrice": "Unit price",
+    "lineTotal": "Line total",
+    "total": "Total",
+    "addLine": "Add line",
+    "lastLine": "An order needs at least one line",
+    "lineCount": "{{count}} line items",
+    "lineItems": "Line items"
+  },
+  "role": {
+    "owner": "Owner",
+    "admin": "Admin",
+    "editor": "Editor",
+    "viewer": "Viewer"
+  },
+  "team": {
+    "engineering": "Engineering",
+    "design": "Design",
+    "sales": "Sales",
+    "support": "Support"
+  },
+  "validation": {
+    "required": "This field is required",
+    "nameMin": "Use at least 2 characters",
+    "email": "Enter a valid email address",
+    "teamMin": "Select at least one team",
+    "seatsMin": "At least 1 seat",
+    "seatsMax": "Maximum 500 seats",
+    "notesMax": "Keep notes under 280 characters",
+    "fixErrors": "Fix the highlighted fields and try again",
+    "passwordMin": "Use at least 8 characters",
+    "mustAccept": "You must accept the terms to continue",
+    "accountMin": "Enter a valid account number",
+    "amountMin": "Amount must be at least 1",
+    "qtyMin": "Quantity must be at least 1",
+    "linesMin": "Add at least one line item"
+  },
+  "list": {
+    "searchPlaceholder": "Search projects",
+    "sortProgress": "Sort by progress",
+    "sortDue": "Sort by due date",
+    "grid": "Grid",
+    "list": "List",
+    "noMatches": "No projects match that search",
+    "newProject": "New project",
+    "membersCount": "{{count}} members",
+    "searchArticles": "Search articles, projects and applications",
+    "tabArticles": "Articles",
+    "tabProjects": "Projects",
+    "tabApplications": "Applications",
+    "sortPopular": "Most liked",
+    "sortRecent": "Most recent",
+    "stars": "stars",
+    "likes": "likes",
+    "comments": "comments",
+    "views": "views",
+    "filterAll": "All",
+    "filterActive": "Active",
+    "filterDone": "Done"
+  },
+  "listStatus": {
+    "early": "Early stage",
+    "onTrack": "On track",
+    "nearlyDone": "Nearly done"
+  },
+  "orderStatus": {
+    "paid": "Paid",
+    "pending": "Pending",
+    "refunded": "Refunded",
+    "failed": "Failed"
+  },
+  "exception": {
+    "403": "You do not have permission to view this page.",
+    "404": "We could not find that page.",
+    "500": "Something broke on our side. The team has been notified.",
+    "goHome": "Go to dashboard",
+    "403from": "You do not have permission to view {{path}}."
+  },
+  "auth": {
+    "signIn": "Sign in",
+    "signUp": "Sign up",
+    "signInSub": "Welcome back. Enter your details to continue.",
+    "createAccount": "Create account",
+    "createAccountSub": "Start with the free tier — no card required.",
+    "remember": "Remember me",
+    "forgot": "Forgot password?",
+    "orContinue": "or continue with",
+    "noAccount": "New here?",
+    "haveAccount": "Already have an account?",
+    "badCredentials": "That email and password do not match.",
+    "demoHint": "This is a demo — use password colony-demo to sign in.",
+    "welcomeBack": "Signed in",
+    "accountCreated": "Account created",
+    "acceptTerms": "I agree to the terms and privacy policy",
+    "heroTitle": "Ant Design admin, without the lock-in",
+    "heroBody": "Everything Ant Design Pro gives you, on plain Vite and React Router. No meta-framework, no prerelease dependencies.",
+    "point": {
+      "noLockIn": "No UmiJS, no prerelease dependencies",
+      "bilingual": "English and Chinese, both first-class",
+      "themed": "Six themes, three densities, full dark mode"
+    },
+    "strength": {
+      "weak": "Weak password",
+      "fair": "Fair password",
+      "strong": "Strong password"
+    },
+    "checkInbox": "Check your inbox",
+    "checkInboxDesc": "We sent a confirmation link to",
+    "resendEmail": "Resend email",
+    "backToSignIn": "Back to sign in"
+  },
+  "method": {
+    "bank": "Bank transfer",
+    "card": "Debit card",
+    "wallet": "Wallet balance"
+  },
+  "article": {
+    "tokens": "Designing with Ant Design v6 tokens",
+    "cjk": "Why your dashboard looks wrong in Chinese",
+    "datatable": "Building a data table without ProComponents",
+    "bundle": "We halved our bundle by deleting one import",
+    "msw": "MSW as the single mock layer for dev, tests and demos",
+    "darkmode": "Dark mode that survives a theme switch",
+    "vite8": "Vite 8 and Rolldown: what actually got faster"
+  },
+  "articleBody": {
+    "tokens": "CSS variables land by default in v6, which finally makes a live theme editor practical rather than theoretical.",
+    "cjk": "Latin line-heights crush 汉字, and negative tracking makes them worse. Two parallel type scales fix it.",
+    "datatable": "antd's Table already owns rendering. What it lacks is a toolbar, column control and a safe export.",
+    "bundle": "MSW is a mock server. It has no business in a production build, and its dependency tree is larger than it looks.",
+    "msw": "One set of handlers serving the dev server, the test runner and the public demo keeps them from drifting apart.",
+    "darkmode": "Three states, not two: explicit light, explicit dark, and the far more common unstamped system default.",
+    "vite8": "Rolldown does the React transform through Oxc, so the SWC plugin is now the slower path."
+  },
+  "tag": {
+    "design": "Design",
+    "antd": "Ant Design",
+    "typography": "Typography",
+    "i18n": "i18n",
+    "react": "React",
+    "performance": "Performance",
+    "testing": "Testing"
+  },
+  "profile": {
+    "orderDetails": "Order details",
+    "lineItems": "Line items",
+    "history": "History",
+    "placed": "Order placed",
+    "paid": "Payment received",
+    "packed": "Packed",
+    "shipped": "Shipped",
+    "pending": "Pending",
+    "accountName": "Account",
+    "accountOwner": "Owner",
+    "since": "Customer since",
+    "lifetimeValue": "Lifetime value",
+    "openTickets": "Open tickets",
+    "health": "Health score",
+    "tabOrders": "Orders",
+    "tabActivity": "Activity",
+    "tabContacts": "Contacts",
+    "renewed": "renewed the annual contract",
+    "ticketOpened": "opened a support ticket",
+    "planChanged": "changed the billing plan",
+    "onboarded": "completed onboarding",
+    "primary": "Primary contact",
+    "billing": "Billing contact",
+    "technical": "Technical contact"
+  },
+  "settings": {
+    "profile": "Profile",
+    "appearance": "Appearance",
+    "notifications": "Notifications",
+    "security": "Security",
+    "avatar": "Avatar",
+    "avatarHint": "PNG or JPG, at least 200×200.",
+    "change": "Change",
+    "bio": "Bio",
+    "themeHint": "System follows your operating system setting.",
+    "densityHint": "Condensed fits more rows on screen.",
+    "password": "Password",
+    "passwordHint": "Last changed 4 months ago.",
+    "twoFactor": "Two-factor authentication",
+    "twoFactorHint": "Require a code from your authenticator app at sign-in.",
+    "sessions": "Active sessions",
+    "sessionsHint": "You are signed in on 3 devices.",
+    "revokeAll": "Sign out everywhere",
+    "notif": {
+      "deploys": "Deployments",
+      "mentions": "Mentions",
+      "digest": "Weekly digest",
+      "security": "Security alerts"
+    },
+    "notifHint": {
+      "deploys": "When a deploy finishes or fails.",
+      "mentions": "When someone mentions you in a comment.",
+      "digest": "A Monday summary of the week's activity.",
+      "security": "Sign-ins from a new device."
+    }
+  },
+  "region": {
+    "emea": "EMEA",
+    "amer": "Americas",
+    "apac": "APAC"
+  },
+  "account": {
+    "skills": "Skills",
+    "profileStrength": "Profile strength",
+    "profileStrengthHint": "Add a bio and a location to reach 100%.",
+    "tabArticles": "Articles",
+    "tabProjects": "Projects",
+    "tabActivity": "Activity"
+  },
+  "assistant": {
+    "conversation": "Conversation",
+    "empty": "Ask anything. This demo streams a fixed reply — swap the provider for your backend and the screen is unchanged.",
+    "placeholder": "Send a message. Enter to send, Shift+Enter for a new line.",
+    "send": "Send",
+    "stop": "Stop",
+    "suggestion": {
+      "summarise": "Summarise last week's orders",
+      "draft": "Draft a release note",
+      "explain": "Explain this error"
+    }
+  },
+  "studio": {
+    "tokens": "Tokens",
+    "primary": "Primary colour",
+    "radius": "Corner radius",
+    "preview": "Live preview",
+    "output": "theme.ts",
+    "copy": "Copy",
+    "export": "Download",
+    "copied": "Theme copied to clipboard",
+    "contrast": "Contrast {{ratio}}:1",
+    "contrastHint": "Below 3:1 this colour is hard to distinguish for many readers. Darken it, or reserve it for decoration only.",
+    "previewNote": "These are real components on the live theme — the sidebar and header update with them.",
+    "wcag": {
+      "aaa": "WCAG AAA",
+      "aa": "WCAG AA",
+      "aaLarge": "AA large text only",
+      "fail": "Below WCAG AA"
+    }
+  },
+  "palette": {
+    "trigger": "Search",
+    "placeholder": "Search pages and commands…",
+    "noResults": "No matching command",
+    "results": "Command results",
+    "hintNavigate": "navigate",
+    "hintRun": "run",
+    "setTheme": "Theme: {{name}}",
+    "setMode": "Appearance: {{name}}",
+    "setDensity": "Density: {{name}}",
+    "setLocale": "Language: {{name}}",
+    "group": {
+      "navigate": "Go to",
+      "theme": "Appearance",
+      "locale": "Language"
+    }
+  },
+  "resource": {
+    "dashboard": "Dashboard",
+    "orders": "Orders",
+    "customers": "Customers",
+    "content": "Content",
+    "billing": "Billing",
+    "settings": "Settings",
+    "users": "Users"
+  },
+  "access": {
+    "resource": "Resource",
+    "matrix": "Permission matrix",
+    "effect": "What this role sees",
+    "effectDesc": "{{role}} is blocked from {{blocked}} of {{total}} guarded pages.",
+    "allowed": "Allowed",
+    "blocked": "Blocked",
+    "resetDefaults": "Reset to defaults",
+    "resetTitle": "Reset all permissions?",
+    "resetDesc": "Every role returns to its shipped grants. Your edits are discarded.",
+    "liveNotice": "This matrix is live",
+    "liveNoticeDesc": "Changes apply immediately — the sidebar hides what the role cannot reach, the command palette stops offering it, and guarded routes redirect to 403.",
+    "lockoutHint": "Removing this would lock you out of this page.",
+    "actAs": "Act as {{role}}",
+    "actingAs": "You are {{role}}",
+    "actAsTitle": "Act as {{role}}?",
+    "actAsConfirm": "Switch role",
+    "actAsDesc": "That role cannot open this page, so you will be redirected to 403. Clear the colony.auth entry in local storage to get back."
+  },
+  "taskStatus": {
+    "backlog": "Backlog",
+    "progress": "In progress",
+    "review": "In review",
+    "done": "Done"
+  },
+  "priority": {
+    "low": "Low",
+    "medium": "Medium",
+    "high": "High"
+  },
+  "kanban": {
+    "points": "{{count}} pts"
+  },
+  "task": {
+    "virtualise": "Virtualise the data table past 10k rows",
+    "cjkAudit": "Audit every screen in Chinese",
+    "themeExport": "Export a theme file from Theme Studio",
+    "rbacMatrix": "Visual permission matrix",
+    "bundleBudget": "Fail CI when the bundle grows",
+    "kanbanBoard": "Kanban board with keyboard dragging",
+    "docsSite": "Bilingual documentation site",
+    "giteeMirror": "Mirror the repository to Gitee",
+    "a11ySweep": "Accessibility sweep to WCAG 2.2 AA",
+    "calendarPage": "Calendar with month and agenda views"
+  },
+  "calendar": {
+    "month": "Month",
+    "agenda": "Agenda",
+    "newEvent": "New event",
+    "prev": "Previous month",
+    "next": "Next month",
+    "hours": "{{count}}h"
+  },
+  "event": {
+    "standup": "Daily standup",
+    "designReview": "Design review",
+    "release": "Release window",
+    "focusBlock": "Focus block",
+    "retro": "Sprint retrospective",
+    "onboarding": "New starter onboarding"
+  },
+  "eventKind": {
+    "meeting": "Meeting",
+    "release": "Release",
+    "review": "Review",
+    "focus": "Focus"
+  },
+  "inbox": {
+    "title": "Inbox",
+    "compose": "Compose",
+    "search": "Search messages",
+    "star": "Star",
+    "reply": "Send reply",
+    "replyPlaceholder": "Write a reply…",
+    "nothingSelected": "Select a message to read it"
+  },
+  "mail": {
+    "reviewRequest": {
+      "subject": "Review needed: data table virtualisation",
+      "body": "The virtualised table holds at 100k rows, but the column resize handle drifts once you scroll past about row 4,000. I think the sticky header and the row container are measuring different widths. Could you take a look before Thursday?"
+    },
+    "cjkFindings": {
+      "subject": "CJK typography audit — findings",
+      "body": "Went through every screen in Chinese. Three issues: the stat cards clip at 15px, the breadcrumb wraps on narrow viewports, and the empty states read like machine translation. Fixes are small; the empty-state copy needs rewriting rather than adjusting."
+    },
+    "bundleReport": {
+      "subject": "Bundle report: we shipped the mock server",
+      "body": "MSW was in the production build — 152 kB of it, plus its dependency tree. Splitting the demo build from the app build took the heaviest route from 1,179 kB to 509 kB. Budget is now enforced in CI."
+    },
+    "themeTokens": {
+      "subject": "Theme tokens: contrast on the default blue",
+      "body": "Ant Design's default primary is 4.10:1 on white. Fine for large text and UI boundaries, below AA for body copy. Theme Studio now shows the ratio next to the picker so nobody ships this by accident."
+    },
+    "demoFeedback": {
+      "subject": "Demo feedback from the weekly call",
+      "body": "Two people asked for the command palette by name before we showed it, which is a good sign. The one complaint: the sidebar hides pages the role cannot reach, and someone read that as a bug rather than a permission."
+    }
+  },
+  "files": {
+    "name": "Name",
+    "owner": "Owner",
+    "modified": "Modified",
+    "size": "Size",
+    "upload": "Upload",
+    "search": "Search files",
+    "root": "All files",
+    "storage": "Storage",
+    "recent": "Recently changed",
+    "quota": "{{used}} of {{total}} used"
+  },
+  "file": {
+    "brand": "Brand assets",
+    "screenshots": "Screenshots",
+    "themeTokens": "theme.tokens.ts",
+    "auditReport": "CJK audit report.pdf",
+    "heroShot": "hero-dark.png",
+    "bundleTrace": "bundle-trace.zip",
+    "localeExport": "locales-export.json",
+    "pressKit": "press-kit.zip"
+  },
+  "notifications": {
+    "all": "All",
+    "unread": "Unread",
+    "markAllRead": "Mark all read",
+    "markRead": "Mark read",
+    "allCaughtUp": "You are all caught up"
+  },
+  "notificationKind": {
+    "deploy": "Deployments",
+    "mention": "Mentions",
+    "security": "Security",
+    "billing": "Billing"
+  },
+  "notification": {
+    "deployOk": {
+      "title": "api-gateway v2.4.1 is live",
+      "body": "Deployed to production in 3m 12s. No error-rate change."
+    },
+    "mentioned": {
+      "title": "Marta mentioned you",
+      "body": "\"@you the column resize drifts past row 4,000 — can you look?\""
+    },
+    "newDevice": {
+      "title": "Sign-in from a new device",
+      "body": "Chrome on macOS, 10.4.2.31. If this was not you, revoke the session."
+    },
+    "invoiceReady": {
+      "title": "August invoice is ready",
+      "body": "INV-2026-0812 for $348 is due in 12 days."
+    },
+    "deployFailed": {
+      "title": "web v8.0.2 rolled back",
+      "body": "Health checks failed twice; traffic returned to v8.0.1 automatically."
+    },
+    "reviewAssigned": {
+      "title": "Review assigned to you",
+      "body": "#4821 datatable virtualisation is waiting on your approval."
+    }
+  },
+  "audit": {
+    "when": "When",
+    "actor": "Actor",
+    "action": "Action",
+    "target": "Target",
+    "severity": "Severity",
+    "details": "Details",
+    "before": "Before",
+    "after": "After"
+  },
+  "auditAction": {
+    "permissionChanged": "Permission revoked",
+    "settingUpdated": "Setting updated",
+    "userInvited": "User invited",
+    "apiKeyCreated": "API key created",
+    "exportRun": "Data exported",
+    "loginFailed": "Failed sign-in"
+  },
+  "severity": {
+    "info": "Info",
+    "warning": "Warning",
+    "critical": "Critical"
+  },
+  "billing": {
+    "currentPlan": "Current plan",
+    "nextInvoice": "Next invoice",
+    "usage": "API usage",
+    "usageDetail": "{{used}} of {{total}} calls this month",
+    "seats": "{{count}} seats",
+    "renewsIn": "Renews in {{days}} days",
+    "changePlan": "Change plan",
+    "paymentMethod": "Payment method",
+    "card": "Card",
+    "expires": "Expires",
+    "billingEmail": "Billing email",
+    "updateCard": "Update card",
+    "invoices": "Invoices",
+    "invoice": "Invoice",
+    "issued": "Issued",
+    "retryPayment": "Retry payment",
+    "failedTitle": "Payment for {{number}} failed",
+    "failedDesc": "The card was declined. Update the payment method to avoid interruption."
+  },
+  "invoiceStatus": {
+    "paid": "Paid",
+    "due": "Due",
+    "failed": "Failed"
+  },
+  "onboarding": {
+    "progress": "Progress",
+    "remaining": "{{count}} steps left",
+    "markDone": "Mark done",
+    "undo": "Undo",
+    "go": "Open",
+    "doneTitle": "Your workspace is set up",
+    "doneDesc": "Everything is configured. You can revisit any step from this page."
+  },
+  "onboardingStep": {
+    "account": {
+      "title": "Complete your profile",
+      "desc": "Name, avatar and contact email."
+    },
+    "theme": {
+      "title": "Choose a theme",
+      "desc": "Pick a preset or edit tokens in Theme Studio."
+    },
+    "team": {
+      "title": "Set up roles",
+      "desc": "Decide what each role can reach before inviting anyone."
+    },
+    "data": {
+      "title": "Connect your data",
+      "desc": "Replace the mock API with your own endpoints."
+    },
+    "billing": {
+      "title": "Add a payment method",
+      "desc": "Required before the trial ends."
+    },
+    "invite": {
+      "title": "Invite your team",
+      "desc": "Send the first invitations."
+    }
+  }
+}

@@ -1,0 +1,935 @@
+{
+  "app": {
+    "name": "蚁群",
+    "tagline": "不绑定框架的 Ant Design 中后台"
+  },
+  "action": {
+    "save": "保存",
+    "cancel": "取消",
+    "confirm": "确定",
+    "delete": "删除",
+    "edit": "编辑",
+    "create": "新建",
+    "search": "查询",
+    "reset": "重置",
+    "export": "导出",
+    "refresh": "刷新",
+    "close": "关闭",
+    "back": "返回",
+    "next": "下一步",
+    "submit": "提交",
+    "view": "查看",
+    "update": "编辑"
+  },
+  "state": {
+    "loading": "加载中",
+    "empty": "暂无数据",
+    "error": "出错了",
+    "retry": "重试",
+    "saved": "已保存",
+    "deleted": "已删除"
+  },
+  "nav": {
+    "dashboard": "仪表盘",
+    "analysis": "分析页",
+    "monitor": "监控页",
+    "workplace": "工作台",
+    "table": "查询表格",
+    "forms": "表单页",
+    "lists": "列表页",
+    "profile": "详情页",
+    "account": "个人页",
+    "settings": "设置",
+    "components": "组件",
+    "elements": "基础元素",
+    "cards": "卡片",
+    "feedback": "反馈",
+    "basicForm": "基础表单",
+    "cardList": "卡片列表",
+    "exceptions": "异常页",
+    "auth": "登录注册",
+    "stepForm": "分步表单",
+    "searchList": "搜索列表",
+    "profileBasic": "订单详情",
+    "advancedForm": "高级表单",
+    "basicList": "标准列表",
+    "profileAdvanced": "客户详情",
+    "accountCenter": "个人中心",
+    "assistant": "AI 助手",
+    "themeStudio": "主题工作室",
+    "forbidden": "403 无权限",
+    "serverError": "500 服务器错误",
+    "notFound": "404 页面不存在",
+    "access": "权限管理",
+    "workspace": "工作区",
+    "kanban": "看板",
+    "calendar": "日历",
+    "inbox": "收件箱",
+    "files": "文件",
+    "notifications": "通知",
+    "audit": "审计日志",
+    "billing": "账务",
+    "onboarding": "新手引导"
+  },
+  "theme": {
+    "label": "主题",
+    "mode": {
+      "light": "浅色",
+      "dark": "深色",
+      "system": "跟随系统"
+    },
+    "density": {
+      "label": "密度",
+      "comfortable": "宽松",
+      "compact": "紧凑",
+      "condensed": "极简"
+    },
+    "preset": {
+      "label": "配色",
+      "azure": "拂晓蓝",
+      "slate": "石板灰",
+      "jade": "翡翠绿",
+      "violet": "酱紫",
+      "cinnabar": "朱砂红",
+      "contrast": "高对比度"
+    }
+  },
+  "locale": {
+    "label": "语言",
+    "en-US": "English",
+    "zh-CN": "简体中文"
+  },
+  "a11y": {
+    "skipToContent": "跳转到主要内容",
+    "toggleSidebar": "折叠侧边栏",
+    "openCommandPalette": "打开命令面板"
+  },
+  "page": {
+    "analysisDesc": "所选周期内的销售额、流量与商品表现。",
+    "monitorDesc": "实时服务健康状况与请求吞吐量。",
+    "workplaceGreeting": "下午好，Aigars",
+    "workplaceDesc": "4 个进行中的项目，其中 1 个本周到期。",
+    "elementsDesc": "模板内置的全部控件，以及它们的真实状态。",
+    "cardsDesc": "适用于仪表盘、列表、个人页与定价页的卡片组合。",
+    "feedbackDesc": "警告提示、浮层、加载与空状态。",
+    "basicFormDesc": "基于 React Hook Form 与 Zod 的 Schema 优先校验。",
+    "cardListDesc": "支持筛选与排序的集合视图，可在网格与列表间切换。",
+    "ordersDesc": "共 240 条订单，由服务端分页与筛选。",
+    "stepFormDesc": "三步完成转账，逐步校验。",
+    "searchListDesc": "在混合内容中搜索、切换页签与排序。",
+    "profileBasicDesc": "单条记录及其明细与流转记录。",
+    "settingsDesc": "个人资料、外观、通知与安全设置。",
+    "advancedFormDesc": "分区块的订单表单，商品明细可编辑并实时汇总。",
+    "basicListDesc": "带数量统计与行内操作的可筛选列表。",
+    "profileAdvancedDesc": "客户账号及其订单、动态与联系人。",
+    "accountCenterDesc": "你的资料、已发布内容与最近动态。",
+    "assistantDesc": "支持流式输出的对话界面，接口可替换。",
+    "themeStudioDesc": "实时调整 Ant Design Design Token，并导出主题文件。",
+    "accessDesc": "角色、权限，以及每个角色实际能访问的页面。",
+    "kanbanDesc": "拖拽卡片在列之间移动，同时支持键盘拖拽。",
+    "calendarDesc": "以月视图与日程视图查看共享日程。",
+    "inboxDesc": "双栏消息列表，支持阅读与回复。",
+    "filesDesc": "浏览、上传与搜索已存储的文件。",
+    "notificationsDesc": "所有发生的事，以及你希望收到哪些提醒。",
+    "auditDesc": "谁在什么时间、从哪里修改了什么。",
+    "billingDesc": "套餐、用量、支付方式与账单。",
+    "onboardingDesc": "六个步骤，完成工作区的初始配置。"
+  },
+  "range": {
+    "7d": "近 7 天",
+    "30d": "近 30 天",
+    "12m": "近 12 月"
+  },
+  "stat": {
+    "revenue": "总销售额",
+    "visits": "访问量",
+    "orders": "支付笔数",
+    "conversion": "转化率",
+    "vsPrevious": "较上一周期"
+  },
+  "chart": {
+    "revenueTrend": "销售额趋势",
+    "trafficByDevice": "设备访问占比",
+    "salesByChannel": "渠道销售额",
+    "topProducts": "热销商品",
+    "requestsPerSecond": "每秒请求数"
+  },
+  "device": {
+    "desktop": "桌面端",
+    "mobile": "移动端",
+    "tablet": "平板"
+  },
+  "channel": {
+    "direct": "直接访问",
+    "organic": "自然搜索",
+    "referral": "外部引荐",
+    "social": "社交媒体",
+    "email": "邮件营销"
+  },
+  "table": {
+    "product": "商品",
+    "category": "类目",
+    "price": "单价",
+    "sold": "销量",
+    "status": "状态",
+    "searchPlaceholder": "搜索订单号或客户",
+    "reference": "订单号",
+    "customer": "客户",
+    "channel": "渠道",
+    "items": "件数",
+    "amount": "金额",
+    "created": "创建时间",
+    "actions": "操作",
+    "columns": "列设置",
+    "resetColumns": "重置列",
+    "fullscreen": "全屏",
+    "selectedCount": "已选择 {{count}} 项",
+    "clearSelection": "清空",
+    "paginationTotal": "第 {{from}}–{{to}} 条 / 共 {{total}} 条",
+    "bulkExported": "已导出 {{count}} 条订单",
+    "bulkDeleted": "已删除 {{count}} 条订单"
+  },
+  "category": {
+    "hardware": "硬件",
+    "software": "软件",
+    "services": "服务"
+  },
+  "status": {
+    "active": "在售",
+    "low": "库存不足",
+    "draft": "草稿"
+  },
+  "product": {
+    "aurora": "Aurora 传感器套件",
+    "meridian": "Meridian 数据分析",
+    "lattice": "Lattice 边缘节点",
+    "quanta": "Quanta 支持服务",
+    "vertex": "Vertex 同步",
+    "cobalt": "Cobalt 网关"
+  },
+  "monitor": {
+    "services": "服务状态",
+    "uptime": "可用率",
+    "activity": "最新动态",
+    "cpu": "CPU",
+    "memory": "内存",
+    "disk": "磁盘"
+  },
+  "service": {
+    "api": "API 网关",
+    "web": "Web 前端",
+    "worker": "任务队列",
+    "database": "数据库"
+  },
+  "serviceStatus": {
+    "healthy": "正常",
+    "degraded": "降级",
+    "down": "故障"
+  },
+  "person": {
+    "wei": "张伟",
+    "marta": "柯玛塔",
+    "jonas": "尤纳斯",
+    "li": "陈莉",
+    "ana": "杜安娜"
+  },
+  "activity": {
+    "deployed": "部署了",
+    "merged": "合并了",
+    "flagged": "标记了",
+    "commented": "评论了"
+  },
+  "workplace": {
+    "projects": "进行中的项目",
+    "quickLinks": "快捷入口",
+    "team": "团队成员",
+    "recentActivity": "最新动态",
+    "dueIn": "{{days}} 天后到期"
+  },
+  "quickLink": {
+    "deploy": "发布",
+    "issues": "问题",
+    "docs": "文档",
+    "team": "团队"
+  },
+  "project": {
+    "datatable": "数据表格",
+    "themeStudio": "主题工作室",
+    "docsSite": "文档站点",
+    "rbac": "可视化权限"
+  },
+  "elements": {
+    "buttons": "按钮",
+    "buttonsDesc": "各类样式、图标与加载状态。每个按钮都直接说明点击后会发生什么。",
+    "sizes": "尺寸与输入框",
+    "sizesDesc": "按钮与输入框统一三档尺寸，密集页面也能对齐。",
+    "tags": "标签与徽标",
+    "tagsDesc": "状态同时由文案和颜色承载，色觉障碍用户同样可读。",
+    "avatars": "头像与评分",
+    "avatarsDesc": "身份标识与简单评分。",
+    "controls": "开关与选择",
+    "controlsDesc": "开关、多选框、单选框与分段控制器。",
+    "progress": "进度",
+    "progressDesc": "条形、环形与仪表盘样式，以及区间滑块。",
+    "timelineTree": "时间轴、树与上传",
+    "timelineTreeDesc": "用于历史记录、层级结构与文件的结构型组件。",
+    "disabled": "禁用",
+    "moreActions": "更多操作",
+    "large": "大",
+    "medium": "中",
+    "small": "小",
+    "optAll": "全部",
+    "default": "默认",
+    "inProgress": "进行中",
+    "closable": "可关闭",
+    "upload": "上传文件",
+    "tooltipHint": "文字提示只做说明，绝不遮挡你刚点开的内容。",
+    "hoverMe": "悬停查看"
+  },
+  "timeline": {
+    "created": "项目创建",
+    "reviewed": "设计评审通过",
+    "blocked": "等待接口联调",
+    "shipped": "已发布至生产环境"
+  },
+  "cards": {
+    "kpi": "指标卡",
+    "structure": "卡片结构",
+    "patterns": "内容范式",
+    "pricing": "定价",
+    "storage": "存储空间",
+    "storageUsed": "已使用 {{used}} GB / 共 {{total}} GB",
+    "withActions": "带操作区",
+    "withActionsDesc": "把高频操作放在卡片底部。",
+    "withTabs": "带页签",
+    "withTabsDesc": "无需跳转即可切换视图。",
+    "withRibbon": "带角标",
+    "withRibbonDesc": "用于标记新增或推荐内容。",
+    "new": "新",
+    "loading": "加载中",
+    "hoverable": "可悬停",
+    "hoverableDesc": "悬停时浮起，表示整张卡片均可点击。",
+    "inner": "内嵌卡片",
+    "innerTitle": "内层卡片",
+    "innerDesc": "用于卡片内部的内容分组。",
+    "profileRole": "资深工程师 · 平台组",
+    "statProjects": "项目",
+    "statReviews": "评审",
+    "statTeams": "团队",
+    "follow": "关注",
+    "chartCard": "销售额",
+    "popular": "最受欢迎",
+    "perMonth": "/月",
+    "getStarted": "免费开始",
+    "choosePlan": "选择方案",
+    "tabOverview": "概览",
+    "tabActivity": "动态"
+  },
+  "plan": {
+    "starter": "入门版",
+    "team": "团队版",
+    "scale": "企业版"
+  },
+  "planFeature": {
+    "projects3": "最多 3 个项目",
+    "communitySupport": "社区支持",
+    "storage1": "1 GB 存储空间",
+    "projectsUnlimited": "项目数量不限",
+    "prioritySupport": "优先技术支持",
+    "storage50": "50 GB 存储空间",
+    "roles": "角色与权限管理",
+    "everythingInTeam": "包含团队版全部功能",
+    "sso": "单点登录与 SCIM",
+    "auditLog": "审计日志",
+    "storage500": "500 GB 存储空间",
+    "sla": "99.9% 可用性 SLA"
+  },
+  "feedback": {
+    "alerts": "警告提示",
+    "alertsDesc": "常驻消息，条件解除前一直显示。",
+    "transient": "浮层与瞬时消息",
+    "transientDesc": "全局提示、通知、对话框、抽屉与二次确认。",
+    "progressSteps": "步骤条",
+    "progressStepsDesc": "多阶段进度，包含错误状态。",
+    "loadingStates": "加载",
+    "emptyStates": "空状态",
+    "results": "结果页",
+    "infoMsg": "模板有新版本可供更新。",
+    "successMsg": "你的修改已发布。",
+    "warningMsg": "有 2 个服务处于降级状态。",
+    "warningDesc": "任务队列延迟已超过 300 毫秒阈值。",
+    "errorMsg": "无法连接计费服务。",
+    "errorDesc": "请求在 30 秒后超时。",
+    "showMessage": "全局提示",
+    "showNotification": "通知提醒",
+    "showModal": "打开对话框",
+    "showDrawer": "打开抽屉",
+    "showConfirm": "确认删除",
+    "showPopconfirm": "气泡确认",
+    "notifTitle": "部署完成",
+    "notifDesc": "api-gateway v2.4.1 已上线生产环境。",
+    "confirmTitle": "确定删除该项目吗？",
+    "confirmDesc": "该操作不可撤销。",
+    "modalTitle": "编辑项目",
+    "modalBody": "对话框内容显示在此，并沿用你选择的主题。",
+    "drawerTitle": "项目设置",
+    "drawerBody": "抽屉适合承载比对话框更长的表单。",
+    "resultSuccess": "项目创建成功",
+    "resultSuccessDesc": "团队现在即可开始协作。",
+    "resultWarning": "部分设置需要处理",
+    "resultWarningDesc": "计费信息尚未填写完整。"
+  },
+  "steps": {
+    "details": "填写信息",
+    "detailsDesc": "名称与负责人",
+    "review": "确认信息",
+    "reviewDesc": "核对摘要",
+    "done": "完成",
+    "doneDesc": "项目已创建"
+  },
+  "form": {
+    "details": "基本信息",
+    "settings": "配置",
+    "name": "项目名称",
+    "namePlaceholder": "例如：升级至 antd v6",
+    "email": "联系邮箱",
+    "role": "角色",
+    "rolePlaceholder": "请选择角色",
+    "team": "所属团队",
+    "teamPlaceholder": "可多选",
+    "startsAt": "开始日期",
+    "seats": "席位数",
+    "notes": "备注",
+    "notesPlaceholder": "开始前需要让团队知晓的信息。",
+    "visibility": "可见范围",
+    "private": "私有",
+    "public": "公开",
+    "budget": "预算",
+    "notify": "变更时邮件通知我",
+    "dropFiles": "将文件拖到此处，或点击上传",
+    "password": "密码",
+    "payFrom": "付款账户",
+    "payTo": "收款人",
+    "amount": "转账金额",
+    "method": "支付方式",
+    "reviewNotice": "请核对以下信息，转账提交后无法撤销。",
+    "transferDone": "转账已提交",
+    "transferDoneDesc": "{{amount}} 元正在转入 {{to}} 的账户。",
+    "newTransfer": "再转一笔",
+    "orderTitle": "订单名称",
+    "orderTitlePlaceholder": "例如：三季度硬件更新",
+    "owner": "负责人",
+    "region": "区域",
+    "deliverBy": "交付日期",
+    "unitPrice": "单价",
+    "lineTotal": "小计",
+    "total": "合计",
+    "addLine": "添加一行",
+    "lastLine": "订单至少需要保留一行明细",
+    "lineCount": "共 {{count}} 行明细",
+    "lineItems": "商品明细"
+  },
+  "role": {
+    "owner": "所有者",
+    "admin": "管理员",
+    "editor": "编辑者",
+    "viewer": "访客"
+  },
+  "team": {
+    "engineering": "研发",
+    "design": "设计",
+    "sales": "销售",
+    "support": "客户支持"
+  },
+  "validation": {
+    "required": "此项为必填",
+    "nameMin": "至少输入 2 个字符",
+    "email": "请输入有效的邮箱地址",
+    "teamMin": "请至少选择一个团队",
+    "seatsMin": "席位数至少为 1",
+    "seatsMax": "席位数最多为 500",
+    "notesMax": "备注请控制在 280 字以内",
+    "fixErrors": "请修正标红的字段后重试",
+    "passwordMin": "密码至少 8 位",
+    "mustAccept": "请先同意服务条款",
+    "accountMin": "请输入有效的账号",
+    "amountMin": "金额至少为 1",
+    "qtyMin": "数量至少为 1",
+    "linesMin": "请至少添加一行明细"
+  },
+  "list": {
+    "searchPlaceholder": "搜索项目",
+    "sortProgress": "按进度排序",
+    "sortDue": "按截止日期排序",
+    "grid": "网格",
+    "list": "列表",
+    "noMatches": "没有匹配的项目",
+    "newProject": "新建项目",
+    "membersCount": "{{count}} 位成员",
+    "searchArticles": "搜索文章、项目与应用",
+    "tabArticles": "文章",
+    "tabProjects": "项目",
+    "tabApplications": "应用",
+    "sortPopular": "最多点赞",
+    "sortRecent": "最新发布",
+    "stars": "收藏",
+    "likes": "点赞",
+    "comments": "评论",
+    "views": "浏览",
+    "filterAll": "全部",
+    "filterActive": "进行中",
+    "filterDone": "已完成"
+  },
+  "listStatus": {
+    "early": "起步阶段",
+    "onTrack": "进展正常",
+    "nearlyDone": "接近完成"
+  },
+  "orderStatus": {
+    "paid": "已支付",
+    "pending": "待支付",
+    "refunded": "已退款",
+    "failed": "支付失败"
+  },
+  "exception": {
+    "403": "你没有权限访问此页面。",
+    "404": "抱歉，找不到该页面。",
+    "500": "服务端出现异常，我们已经收到通知。",
+    "goHome": "返回仪表盘",
+    "403from": "你没有权限访问 {{path}}。"
+  },
+  "auth": {
+    "signIn": "登录",
+    "signUp": "注册",
+    "signInSub": "欢迎回来，请输入账号信息继续。",
+    "createAccount": "创建账号",
+    "createAccountSub": "从免费版开始，无需绑定银行卡。",
+    "remember": "记住我",
+    "forgot": "忘记密码？",
+    "orContinue": "或使用以下方式",
+    "noAccount": "还没有账号？",
+    "haveAccount": "已有账号？",
+    "badCredentials": "邮箱与密码不匹配。",
+    "demoHint": "这是演示环境，请使用密码 colony-demo 登录。",
+    "welcomeBack": "登录成功",
+    "accountCreated": "账号创建成功",
+    "acceptTerms": "我已阅读并同意服务条款与隐私政策",
+    "heroTitle": "不绑定框架的 Ant Design 中后台",
+    "heroBody": "Ant Design Pro 的全部能力，构建在 Vite 与 React Router 之上。不绑定 Umi，不依赖预发布版本。",
+    "point": {
+      "noLockIn": "不依赖 UmiJS 与预发布版本",
+      "bilingual": "中文与英文同为一等公民",
+      "themed": "6 套配色、3 档密度、完整深色模式"
+    },
+    "strength": {
+      "weak": "密码强度：弱",
+      "fair": "密码强度：中",
+      "strong": "密码强度：强"
+    },
+    "checkInbox": "请查收邮件",
+    "checkInboxDesc": "我们已将确认链接发送至",
+    "resendEmail": "重新发送",
+    "backToSignIn": "返回登录"
+  },
+  "method": {
+    "bank": "银行转账",
+    "card": "储蓄卡",
+    "wallet": "钱包余额"
+  },
+  "article": {
+    "tokens": "用 Ant Design v6 Design Token 做设计",
+    "cjk": "为什么你的中后台在中文下不好看",
+    "datatable": "不依赖 ProComponents 实现数据表格",
+    "bundle": "删掉一个 import，包体积减半",
+    "msw": "用 MSW 统一开发、测试与演示的 Mock 层",
+    "darkmode": "经得起主题切换的深色模式",
+    "vite8": "Vite 8 与 Rolldown：到底哪里变快了"
+  },
+  "articleBody": {
+    "tokens": "v6 默认启用 CSS 变量，让可视化主题编辑器从设想变成了可落地的方案。",
+    "cjk": "拉丁文的行高会挤压汉字，负字距更是雪上加霜。两套并行的字号体系可以解决这个问题。",
+    "datatable": "antd 的 Table 已经负责了渲染，缺的是工具栏、列控制与安全的导出能力。",
+    "bundle": "MSW 是 Mock 服务，本就不该出现在生产构建里，而它的依赖树比看上去更大。",
+    "msw": "一套 handlers 同时服务开发服务器、测试运行器与线上演示，三者不会再各自漂移。",
+    "darkmode": "是三种状态而非两种：显式浅色、显式深色，以及最常见的未标记的跟随系统。",
+    "vite8": "Rolldown 通过 Oxc 完成 React 转换，因此 SWC 插件反而成了较慢的那条路径。"
+  },
+  "tag": {
+    "design": "设计",
+    "antd": "Ant Design",
+    "typography": "排版",
+    "i18n": "国际化",
+    "react": "React",
+    "performance": "性能",
+    "testing": "测试"
+  },
+  "profile": {
+    "orderDetails": "订单信息",
+    "lineItems": "商品明细",
+    "history": "流转记录",
+    "placed": "订单创建",
+    "paid": "支付成功",
+    "packed": "已打包",
+    "shipped": "已发货",
+    "pending": "待处理",
+    "accountName": "客户名称",
+    "accountOwner": "负责人",
+    "since": "合作起始",
+    "lifetimeValue": "累计成交额",
+    "openTickets": "待处理工单",
+    "health": "健康度",
+    "tabOrders": "订单",
+    "tabActivity": "动态",
+    "tabContacts": "联系人",
+    "renewed": "续签了年度合同",
+    "ticketOpened": "提交了一个工单",
+    "planChanged": "变更了计费方案",
+    "onboarded": "完成了初始配置",
+    "primary": "主要联系人",
+    "billing": "账务联系人",
+    "technical": "技术联系人"
+  },
+  "settings": {
+    "profile": "个人资料",
+    "appearance": "外观",
+    "notifications": "通知",
+    "security": "安全",
+    "avatar": "头像",
+    "avatarHint": "支持 PNG 或 JPG，建议不小于 200×200。",
+    "change": "修改",
+    "bio": "个人简介",
+    "themeHint": "“跟随系统”将使用操作系统的外观设置。",
+    "densityHint": "“极简”模式可在一屏内展示更多内容。",
+    "password": "登录密码",
+    "passwordHint": "上次修改于 4 个月前。",
+    "twoFactor": "两步验证",
+    "twoFactorHint": "登录时需要输入身份验证器中的动态码。",
+    "sessions": "登录设备",
+    "sessionsHint": "当前有 3 台设备处于登录状态。",
+    "revokeAll": "退出全部设备",
+    "notif": {
+      "deploys": "部署通知",
+      "mentions": "@ 我的消息",
+      "digest": "每周摘要",
+      "security": "安全提醒"
+    },
+    "notifHint": {
+      "deploys": "部署完成或失败时通知。",
+      "mentions": "有人在评论中提到你时通知。",
+      "digest": "每周一发送上周动态汇总。",
+      "security": "检测到新设备登录时通知。"
+    }
+  },
+  "region": {
+    "emea": "欧洲及中东",
+    "amer": "美洲",
+    "apac": "亚太"
+  },
+  "account": {
+    "skills": "技能标签",
+    "profileStrength": "资料完整度",
+    "profileStrengthHint": "补充个人简介与所在地即可达到 100%。",
+    "tabArticles": "文章",
+    "tabProjects": "项目",
+    "tabActivity": "动态"
+  },
+  "assistant": {
+    "conversation": "对话记录",
+    "empty": "随时提问。当前为演示环境，仅流式返回固定回复；替换 provider 接入真实后端后，本页面无需改动。",
+    "placeholder": "输入消息。回车发送，Shift+回车换行。",
+    "send": "发送",
+    "stop": "停止",
+    "suggestion": {
+      "summarise": "总结上周的订单情况",
+      "draft": "起草一份发版说明",
+      "explain": "解释这个报错"
+    }
+  },
+  "studio": {
+    "tokens": "Design Token",
+    "primary": "主色",
+    "radius": "圆角",
+    "preview": "实时预览",
+    "output": "theme.ts",
+    "copy": "复制",
+    "export": "下载",
+    "copied": "主题配置已复制到剪贴板",
+    "contrast": "对比度 {{ratio}}:1",
+    "contrastHint": "低于 3:1 时，许多读者难以分辨该颜色。请调深，或仅将其用于装饰。",
+    "previewNote": "以下均为应用真实主题的组件 —— 侧边栏与顶栏会同步变化。",
+    "wcag": {
+      "aaa": "符合 WCAG AAA",
+      "aa": "符合 WCAG AA",
+      "aaLarge": "仅符合大号文字 AA",
+      "fail": "未达到 WCAG AA"
+    }
+  },
+  "palette": {
+    "trigger": "搜索",
+    "placeholder": "搜索页面与命令…",
+    "noResults": "没有匹配的命令",
+    "results": "命令结果",
+    "hintNavigate": "切换",
+    "hintRun": "执行",
+    "setTheme": "配色：{{name}}",
+    "setMode": "外观：{{name}}",
+    "setDensity": "密度：{{name}}",
+    "setLocale": "语言：{{name}}",
+    "group": {
+      "navigate": "前往",
+      "theme": "外观",
+      "locale": "语言"
+    }
+  },
+  "resource": {
+    "dashboard": "仪表盘",
+    "orders": "订单",
+    "customers": "客户",
+    "content": "内容",
+    "billing": "账务",
+    "settings": "设置",
+    "users": "用户"
+  },
+  "access": {
+    "resource": "资源",
+    "matrix": "权限矩阵",
+    "effect": "该角色可见范围",
+    "effectDesc": "{{role}} 在 {{total}} 个受控页面中有 {{blocked}} 个无法访问。",
+    "allowed": "可访问",
+    "blocked": "已拦截",
+    "resetDefaults": "恢复默认",
+    "resetTitle": "确定恢复全部权限设置？",
+    "resetDesc": "所有角色将恢复为出厂配置，你的修改会被丢弃。",
+    "liveNotice": "该矩阵即时生效",
+    "liveNoticeDesc": "修改立即生效 —— 侧边栏会隐藏该角色无法访问的入口，命令面板不再提供这些页面，受控路由会跳转至 403。",
+    "lockoutHint": "取消此项会导致你无法再进入本页面。",
+    "actAs": "以 {{role}} 身份查看",
+    "actingAs": "当前身份：{{role}}",
+    "actAsTitle": "切换为 {{role}} 身份？",
+    "actAsConfirm": "确认切换",
+    "actAsDesc": "该角色无权访问本页面，切换后会跳转至 403。如需恢复，请清除本地存储中的 colony.auth。"
+  },
+  "taskStatus": {
+    "backlog": "待办",
+    "progress": "进行中",
+    "review": "待评审",
+    "done": "已完成"
+  },
+  "priority": {
+    "low": "低",
+    "medium": "中",
+    "high": "高"
+  },
+  "kanban": {
+    "points": "{{count}} 点"
+  },
+  "task": {
+    "virtualise": "数据表格支持 1 万行以上虚拟滚动",
+    "cjkAudit": "逐页走查中文显示效果",
+    "themeExport": "从主题工作室导出主题文件",
+    "rbacMatrix": "可视化权限矩阵",
+    "bundleBudget": "包体积超标时 CI 失败",
+    "kanbanBoard": "支持键盘拖拽的看板",
+    "docsSite": "双语文档站点",
+    "giteeMirror": "将仓库镜像至 Gitee",
+    "a11ySweep": "无障碍走查至 WCAG 2.2 AA",
+    "calendarPage": "支持月视图与日程视图的日历"
+  },
+  "calendar": {
+    "month": "月",
+    "agenda": "日程",
+    "newEvent": "新建日程",
+    "prev": "上个月",
+    "next": "下个月",
+    "hours": "{{count}} 小时"
+  },
+  "event": {
+    "standup": "每日站会",
+    "designReview": "设计评审",
+    "release": "发版窗口",
+    "focusBlock": "专注时段",
+    "retro": "迭代复盘",
+    "onboarding": "新同事入职"
+  },
+  "eventKind": {
+    "meeting": "会议",
+    "release": "发版",
+    "review": "评审",
+    "focus": "专注"
+  },
+  "inbox": {
+    "title": "收件箱",
+    "compose": "写邮件",
+    "search": "搜索邮件",
+    "star": "标记星标",
+    "reply": "发送回复",
+    "replyPlaceholder": "输入回复内容…",
+    "nothingSelected": "请选择一封邮件查看"
+  },
+  "mail": {
+    "reviewRequest": {
+      "subject": "需要评审：数据表格虚拟滚动",
+      "body": "虚拟表格在 10 万行下表现稳定，但滚动到约第 4000 行之后，列宽拖拽手柄会出现偏移。我怀疑是吸顶表头和行容器测量到的宽度不一致。周四之前方便看一下吗？"
+    },
+    "cjkFindings": {
+      "subject": "中文排版走查结果",
+      "body": "已逐页检查中文显示。发现三个问题：指标卡在 15px 下文字被裁切、面包屑在窄屏换行、空状态文案读起来像机器翻译。前两个改动很小；空状态文案需要重写而不是微调。"
+    },
+    "bundleReport": {
+      "subject": "体积报告：我们把 Mock 服务打进了生产包",
+      "body": "MSW 出现在了生产构建里 —— 光它本身就有 152 kB，还带着整棵依赖树。把演示构建和应用构建拆开后，最重的页面从 1179 kB 降到了 509 kB。体积预算现已在 CI 中强制执行。"
+    },
+    "themeTokens": {
+      "subject": "主题 Token：默认蓝的对比度",
+      "body": "Ant Design 默认主色在白底上的对比度是 4.10:1。用于大号文字和界面分隔线没问题，但作为正文颜色达不到 AA。主题工作室现在会在取色器旁显示该数值，避免有人无意中发布这样的配色。"
+    },
+    "demoFeedback": {
+      "subject": "周会演示反馈",
+      "body": "有两位同事在我们演示之前就主动问起了命令面板，这是个好信号。唯一的意见是：侧边栏会隐藏当前角色无权访问的页面，有人把这理解成了缺陷而不是权限控制。"
+    }
+  },
+  "files": {
+    "name": "名称",
+    "owner": "所有者",
+    "modified": "修改时间",
+    "size": "大小",
+    "upload": "上传",
+    "search": "搜索文件",
+    "root": "全部文件",
+    "storage": "存储空间",
+    "recent": "最近修改",
+    "quota": "已使用 {{used}} / 共 {{total}}"
+  },
+  "file": {
+    "brand": "品牌素材",
+    "screenshots": "截图",
+    "themeTokens": "theme.tokens.ts",
+    "auditReport": "中文排版走查报告.pdf",
+    "heroShot": "hero-dark.png",
+    "bundleTrace": "bundle-trace.zip",
+    "localeExport": "locales-export.json",
+    "pressKit": "press-kit.zip"
+  },
+  "notifications": {
+    "all": "全部",
+    "unread": "未读",
+    "markAllRead": "全部标为已读",
+    "markRead": "标为已读",
+    "allCaughtUp": "没有未读消息了"
+  },
+  "notificationKind": {
+    "deploy": "部署",
+    "mention": "提及",
+    "security": "安全",
+    "billing": "账务"
+  },
+  "notification": {
+    "deployOk": {
+      "title": "api-gateway v2.4.1 已上线",
+      "body": "3 分 12 秒完成生产环境部署，错误率无变化。"
+    },
+    "mentioned": {
+      "title": "柯玛塔提到了你",
+      "body": "“@你 滚动到 4000 行之后列宽拖拽会偏移，方便看一下吗？”"
+    },
+    "newDevice": {
+      "title": "检测到新设备登录",
+      "body": "macOS 上的 Chrome，10.4.2.31。若非本人操作，请立即注销该会话。"
+    },
+    "invoiceReady": {
+      "title": "8 月账单已生成",
+      "body": "账单 INV-2026-0812 金额 348 元，12 天后到期。"
+    },
+    "deployFailed": {
+      "title": "web v8.0.2 已回滚",
+      "body": "健康检查连续两次失败，流量已自动切回 v8.0.1。"
+    },
+    "reviewAssigned": {
+      "title": "有一个评审指派给你",
+      "body": "#4821 数据表格虚拟滚动正在等待你的审核。"
+    }
+  },
+  "audit": {
+    "when": "时间",
+    "actor": "操作者",
+    "action": "操作",
+    "target": "对象",
+    "severity": "级别",
+    "details": "详情",
+    "before": "变更前",
+    "after": "变更后"
+  },
+  "auditAction": {
+    "permissionChanged": "撤销权限",
+    "settingUpdated": "修改设置",
+    "userInvited": "邀请用户",
+    "apiKeyCreated": "创建 API 密钥",
+    "exportRun": "导出数据",
+    "loginFailed": "登录失败"
+  },
+  "severity": {
+    "info": "提示",
+    "warning": "警告",
+    "critical": "严重"
+  },
+  "billing": {
+    "currentPlan": "当前套餐",
+    "nextInvoice": "下期账单",
+    "usage": "接口用量",
+    "usageDetail": "本月已调用 {{used}} / 共 {{total}} 次",
+    "seats": "{{count}} 个席位",
+    "renewsIn": "{{days}} 天后续订",
+    "changePlan": "变更套餐",
+    "paymentMethod": "支付方式",
+    "card": "银行卡",
+    "expires": "有效期至",
+    "billingEmail": "账单邮箱",
+    "updateCard": "更换银行卡",
+    "invoices": "账单记录",
+    "invoice": "账单号",
+    "issued": "出账时间",
+    "retryPayment": "重新支付",
+    "failedTitle": "账单 {{number}} 支付失败",
+    "failedDesc": "银行卡被拒付，请更新支付方式以免服务中断。"
+  },
+  "invoiceStatus": {
+    "paid": "已支付",
+    "due": "待支付",
+    "failed": "支付失败"
+  },
+  "onboarding": {
+    "progress": "完成进度",
+    "remaining": "还剩 {{count}} 步",
+    "markDone": "标记完成",
+    "undo": "撤销",
+    "go": "前往",
+    "doneTitle": "工作区已配置完成",
+    "doneDesc": "所有配置均已完成，随时可以从本页回顾任意步骤。"
+  },
+  "onboardingStep": {
+    "account": {
+      "title": "完善个人资料",
+      "desc": "姓名、头像与联系邮箱。"
+    },
+    "theme": {
+      "title": "选择主题",
+      "desc": "挑选预设配色，或在主题工作室中调整 Token。"
+    },
+    "team": {
+      "title": "配置角色权限",
+      "desc": "在邀请成员之前，先确定每个角色的可见范围。"
+    },
+    "data": {
+      "title": "接入你的数据",
+      "desc": "用真实接口替换 Mock 数据。"
+    },
+    "billing": {
+      "title": "添加支付方式",
+      "desc": "试用期结束前需要完成。"
+    },
+    "invite": {
+      "title": "邀请团队成员",
+      "desc": "发出第一批邀请。"
+    }
+  }
+}
